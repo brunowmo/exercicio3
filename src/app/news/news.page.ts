@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewChild } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 
 @Component({
@@ -8,7 +8,7 @@ import { Component, OnInit, Input, ViewChild } from '@angular/core';
 })
 export class NewsPage implements OnInit {
 
-  @ViewChild('title') titleInput;
+  
 
   private formData : Object;
   private list : Array<Object>;
@@ -26,7 +26,7 @@ export class NewsPage implements OnInit {
   add(item: Object) : void {
     this.list.push(item);
     this.formData = {};
-    this.titleInput.setFocus();
+    
   }
 
   ngOnInit() {
